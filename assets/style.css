@@ -114,7 +114,7 @@ section.block{padding:80px 0}
 .split p{margin:0;font-size:19px;color:var(--ink-2)}
 .book-cover{flex:0 1 300px;display:block;border-radius:4px;overflow:hidden;box-shadow:0 18px 40px rgba(11,31,51,.28);transition:transform .2s}
 .book-cover:hover{transform:translateY(-3px)}
-.book-cover img{width:100%;height:auto}
+.book-cover img{width:100%;height:auto;aspect-ratio:auto}
 .about{background:var(--white);border-top:1px solid var(--rule)}
 .monogram{flex:0 0 160px;height:160px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font:800 44px var(--display);color:var(--on-dark)}
 .links{display:flex;flex-wrap:wrap;gap:20px;font-weight:600}

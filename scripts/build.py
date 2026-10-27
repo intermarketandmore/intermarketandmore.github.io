@@ -154,6 +154,12 @@ def update(pages):
 
 # ------------------------------------------------------------------ helpers
 
+def asset_version(name):
+    """Impronta del file: cambia a ogni modifica e obbliga il browser a ricaricarlo."""
+    import hashlib
+    return hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()[:10]
+
+
 def ddmmyyyy(iso):
     d = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ROME)
     return d.strftime("%d/%m/%Y")
@@ -218,7 +224,7 @@ def head(title, desc, base, canonical_path):
 <meta property="og:type" content="website">
 <link rel="icon" href="{base}assets/logo.png">
 <link rel="preload" href="{base}assets/fonts/archivo-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{base}assets/style.css">
+<link rel="stylesheet" href="{base}assets/style.css?v={asset_version('style.css')}">
 </head>
 <body>"""
 
@@ -246,7 +252,7 @@ def footer(base):
 <p>Questo sito non usa cookie né strumenti di tracciamento. I video di YouTube si caricano solo quando li avvii, dal dominio youtube-nocookie.com.</p>
 <p class="mono">© {year} IntermarketAndMore · <a href="{BLOG}">Blog</a> · <a href="{YT_CHANNEL}">YouTube</a> · <a href="{LINKEDIN}">LinkedIn</a> · <a href="{X_URL}">X</a> · <a href="{INSTAGRAM}">Instagram</a></p>
 </div></footer>
-<script src="{base}assets/site.js" defer></script>
+<script src="{base}assets/site.js?v={asset_version('site.js')}" defer></script>
 </body>
 </html>
 """
