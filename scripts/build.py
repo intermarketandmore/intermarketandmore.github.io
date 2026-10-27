@@ -26,7 +26,9 @@ YT_CHANNEL_ID = "UCh5nSWks5XPovipy2vFtpBg"
 YT_FEED = "https://www.youtube.com/feeds/videos.xml?channel_id=" + YT_CHANNEL_ID
 YT_CHANNEL = "https://www.youtube.com/channel/" + YT_CHANNEL_ID
 INSTAGRAM = "https://www.instagram.com/intermarketandmore/"
-BOOK_IT = "https://www.amazon.it/s?k=La+Danza+dei+Mercati+Riboldi"
+BOOK_IT = "https://www.amazon.it/dp/B0GFXYXVMH"
+LINKEDIN = "https://www.linkedin.com/in/danilo-riboldi-637421b/"
+X_URL = "https://x.com/intermarketblog"
 BOOK_EN = "https://www.amazon.com/dp/B0HD117W42"
 UA = "Mozilla/5.0 (compatible; IntermarketAndMore-site-builder/1.0)"
 
@@ -242,7 +244,7 @@ def footer(base):
 <img src="{base}assets/logo.png" alt="IntermarketAndMore" width="195" height="40">
 <p>I contenuti di questo sito hanno finalità esclusivamente informative e non costituiscono consulenza finanziaria, raccomandazione personalizzata né sollecitazione all’investimento. Le opinioni espresse sono personali. I video Focus Mercati sono realizzati con strumenti di intelligenza artificiale.</p>
 <p>Questo sito non usa cookie né strumenti di tracciamento. I video di YouTube si caricano solo quando li avvii, dal dominio youtube-nocookie.com.</p>
-<p class="mono">© {year} IntermarketAndMore · <a href="{BLOG}">Blog</a> · <a href="{YT_CHANNEL}">YouTube</a> · <a href="{INSTAGRAM}">Instagram</a></p>
+<p class="mono">© {year} IntermarketAndMore · <a href="{BLOG}">Blog</a> · <a href="{YT_CHANNEL}">YouTube</a> · <a href="{LINKEDIN}">LinkedIn</a> · <a href="{X_URL}">X</a> · <a href="{INSTAGRAM}">Instagram</a></p>
 </div></footer>
 <script src="{base}assets/site.js" defer></script>
 </body>
@@ -324,7 +326,7 @@ def render_home(posts, videos):
 <p class="kicker">Chi sono</p>
 <h2 id="chi-title">Danilo Riboldi</h2>
 <p>Da oltre vent’anni curo IntermarketAndMore, piattaforma indipendente di analisi macro e finanziaria. Ideatore del Metodo Fusion e autore de “La Danza dei Mercati”.</p>
-<div class="links"><a href="{YT_CHANNEL}">YouTube ↗</a><a href="{INSTAGRAM}">Instagram ↗</a><a href="{BLOG}">Blog ↗</a></div>
+<div class="links"><a href="{YT_CHANNEL}">YouTube ↗</a><a href="{LINKEDIN}">LinkedIn ↗</a><a href="{X_URL}">X ↗</a><a href="{INSTAGRAM}">Instagram ↗</a><a href="{BLOG}">Blog ↗</a></div>
 </div>
 </div></section>
 </main>
