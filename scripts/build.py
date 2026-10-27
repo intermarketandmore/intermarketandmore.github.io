@@ -22,9 +22,9 @@ ROME = ZoneInfo("Europe/Rome")
 
 BLOG = "https://intermarketandmore.finanzaonline.com"
 BLOG_FEED = BLOG + "/feed"
-YT_CHANNEL_ID = "UCh5nSWks5XPovipy2vFtpBg"
+YT_CHANNEL_ID = "UCq0thuUiEHu7AS1v5MlivAw"  # @Intermarketandmore
 YT_FEED = "https://www.youtube.com/feeds/videos.xml?channel_id=" + YT_CHANNEL_ID
-YT_CHANNEL = "https://www.youtube.com/channel/" + YT_CHANNEL_ID
+YT_CHANNEL = "https://www.youtube.com/@Intermarketandmore"
 INSTAGRAM = "https://www.instagram.com/intermarketandmore/"
 BOOK_IT = "https://www.amazon.it/dp/B0GFXYXVMH"
 LINKEDIN = "https://www.linkedin.com/in/danilo-riboldi-637421b/"
