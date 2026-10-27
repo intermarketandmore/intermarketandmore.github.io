@@ -311,7 +311,7 @@ def render_home(posts, videos):
 </div></section>
 
 <section class="block" id="libro" aria-labelledby="libro-title"><div class="wrap split">
-<div class="book-cover" aria-hidden="true"><span>IL LIBRO</span><b>La Danza dei Mercati</b><span>DANILO RIBOLDI</span></div>
+<a class="book-cover" href="{BOOK_IT}"><img src="assets/copertina-la-danza-dei-mercati.jpg" alt="Copertina di La Danza dei Mercati di Danilo Riboldi" width="520" height="685" loading="lazy"></a>
 <div class="side">
 <p class="kicker">Il libro</p>
 <h2 id="libro-title">La Danza dei Mercati</h2>
